@@ -1,5 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
+=======
+using System.Linq;
+using System.Threading.Tasks;
+using SalesWebMVC.Models.Enums;
+>>>>>>> 4413869995234d2d35b59dc65edf5747a909a520
 
 namespace SalesWebMVC.Models
 {
@@ -14,7 +20,10 @@ namespace SalesWebMVC.Models
         public SalesRecord()
         {
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4413869995234d2d35b59dc65edf5747a909a520
         public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
