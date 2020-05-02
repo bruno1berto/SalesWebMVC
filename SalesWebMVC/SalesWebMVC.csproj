@@ -5,14 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Departments\**" />
-    <Content Remove="Views\Departments\**" />
-    <EmbeddedResource Remove="Views\Departments\**" />
-    <None Remove="Views\Departments\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Controllers\DepartmentsController.cs" />
     <Compile Remove="Migrations\20200429010436_Initial.cs" />
     <Compile Remove="Migrations\20200429010436_Initial.Designer.cs" />
     <Compile Remove="Models\Departments.cs" />
