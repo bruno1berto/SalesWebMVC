@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using SalesWebMVC.Models.Enums;
 
 namespace SalesWebMVC.Models
 {
@@ -17,17 +13,13 @@ namespace SalesWebMVC.Models
         public SalesRecord()
         {
         }
-<<<<<<< HEAD
-        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
-=======
 
-        public SalesRecord(int id, DateTime date, double amount, SaleStatus status)
->>>>>>> parent of 8c83a6d... Seeding Service
-        {
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller) { 
             Id = id;
             Date = date;
             Amount = amount;
             Status = status;
+            Seller = seller;
         }
     }
 }

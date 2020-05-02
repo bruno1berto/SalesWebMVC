@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\DepartmentsController.cs" />
+    <Compile Remove="Migrations\20200429010436_Initial.cs" />
+    <Compile Remove="Migrations\20200429010436_Initial.Designer.cs" />
     <Compile Remove="Models\Departments.cs" />
     <Compile Remove="Views\SellersController.cs" />
   </ItemGroup>
