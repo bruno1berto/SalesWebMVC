@@ -47,6 +47,7 @@ namespace SalesWebMVC.Migrations
                     b.HasIndex("SellerId");
 
                     b.ToTable("SalesRecords");
+<<<<<<< HEAD
                 });
 
             modelBuilder.Entity("SalesWebMVC.Models.Seller", b =>
@@ -103,6 +104,8 @@ namespace SalesWebMVC.Migrations
                     b.HasIndex("SellerId");
 
                     b.ToTable("SalesRecord");
+=======
+>>>>>>> parent of 8c83a6d... Seeding Service
                 });
 
             modelBuilder.Entity("SalesWebMVC.Models.Seller", b =>
@@ -124,7 +127,7 @@ namespace SalesWebMVC.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Seller");
+                    b.ToTable("Sellers");
                 });
 
             modelBuilder.Entity("SalesWebMVC.Models.SalesRecord", b =>

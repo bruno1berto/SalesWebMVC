@@ -17,7 +17,12 @@ namespace SalesWebMVC.Models
         public SalesRecord()
         {
         }
+<<<<<<< HEAD
         public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
+=======
+
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status)
+>>>>>>> parent of 8c83a6d... Seeding Service
         {
             Id = id;
             Date = date;

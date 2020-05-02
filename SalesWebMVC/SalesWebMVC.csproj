@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\DepartmentsController.cs" />
+    <Compile Remove="Models\Departments.cs" />
     <Compile Remove="Views\SellersController.cs" />
   </ItemGroup>
 
