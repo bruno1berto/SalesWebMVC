@@ -1,0 +1,37 @@
+﻿@model SalesWebMVC.Models.Seller
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Seller</h4><!--Cria um título-->
+
+<hr /><!--Cria uma linha divisória-->
+
+<div class="row"><!--Cria uma divisão que acomoda um conjunto de elementos. class="row" -> garante q a div ira preencer a largura da página.-->
+    <div class="col-md-4"><!--class="col-md-4" -> garante q a div ira preencer 1/3 da largura da página. col-md = 12 partes então 4 = 1/3.-->
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="BaseSalary" class="control-label"></label>
+                <input asp-for="BaseSalary" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

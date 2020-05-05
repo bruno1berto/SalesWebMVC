@@ -6,9 +6,16 @@
 
 <h2>@ViewData["Title"]</h2>
 
-<table class="table table-striped table-hover"> <!--Cria uma tabela-->
-    <thead> <!--Cabeçalho da tabela-->
-        <tr class="bg-primary".text-white><!--linhas-->
+<p>
+    <a asp-action="Create" class="btn btn-link">Create New</a>
+</p>
+
+<table class="table table-striped table-hover">
+    <!--Cria uma tabela-->
+    <thead>
+        <!--Cabeçalho da tabela-->
+        <tr class="bg-primary" .text-white>
+            <!--linhas-->
             <th>
                 <!--Colunas-->
                 @Html.DisplayNameFor(model => model.Name)
@@ -28,27 +35,27 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var item in Model)
+        @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BirthDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BaseSalary)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" aria->Edit | </a>
-                <a asp-action="Details" asp-route-id="@item.Id" aria->Details | </a>
-                <a asp-action="Delete" asp-route-id="@item.Id" aria->Delete</a>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BaseSalary)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" aria->Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" aria->Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" aria->Delete</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
