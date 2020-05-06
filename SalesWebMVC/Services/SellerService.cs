@@ -23,6 +23,7 @@ namespace SalesWebMVC.Services
         }
         public void Insert(Seller seller)
         {
+            seller.Department = _context.Department.First(); // Add o primeiro departamento da lista como padrão
             _context.Add(seller);
             _context.SaveChanges();
         }
